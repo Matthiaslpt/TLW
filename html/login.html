@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/reservation.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Connexion</title>
+    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+  </head>
+
+  <body id="page_r" onload="init_page()">
+    <div id="global">
+      <img src="../images/log.jpg" id="background_image" alt="fond"/>
+      <div id="carte">
+        <main>
+          <h1 id="entete"></h1>
+            <fieldset>
+              Se connecter ou Créer un compte: <br /><br />
+              <label for="id"> Votre identifiant: </label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Identifiant"
+                id="id"
+                required
+              />
+              <br /><br />
+              <label for="mdp">Votre mot de passe: </label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Mot de passe"
+                id="mdp"
+                required
+              />
+              <br /><br />
+              <div id="error">
+                Le mot de passe ou l'identifiant est invalide
+              </div>
+              <br />
+              <input
+                id="bouton"
+                type="button"
+                value="Connexion"
+                onclick="checkPassword()"
+              />
+            </fieldset>
+        </main>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

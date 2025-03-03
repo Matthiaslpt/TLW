@@ -1,0 +1,235 @@
+/* Styles globaux */
+
+/* Fait en sorte que le site s'adapte à toutes les tailles d'écran */
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Centre les titres et sous-titres de chaque page */
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+
+/* Mise en forme des données des pages */
+body {
+  margin: 0 auto;
+  align-content: center;
+  height: 100%;
+  width: 99%;
+}
+
+/* Styles du Footer */
+
+/* Initialise la forme du footer et sa position */
+footer {
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-content: center;
+  bottom: 0;
+  width: 100vw;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  padding: 10px;
+  justify-items: center;
+}
+
+/* Mise en forme des éléments dans le footer */
+footer a {
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+}
+
+/* Couleur du lien visité dans le footer */
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* Couleur lors du survol */
+a:hover {
+  color: darkcyan;
+}
+
+/* Styles des Boutons */
+
+/* Initialise nos boutons (taille, forme, couleur) */
+#bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #53b1dc;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+/* Couleur du bouton quand on le survole */
+#bouton:hover {
+  transform: translateY(-2px);
+  background-color: #2980b9;
+}
+
+/* Effet lors du clic */
+#bouton:active {
+  transform: scale(0.95);
+}
+
+/* Styles spécifiques */
+
+#contenu-panier #confirmation {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Style pour la section "À Propos" */
+#apropos {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  font-size: 130%;
+}
+
+/* Style pour la section "Contenu" */
+#contenu {
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  background-size: 100%;
+}
+
+/* Style pour la section "Contact" */
+#contact {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}
+
+/* Style pour l'élément avec l'ID "coord-bancaire" (actuellement caché) */
+#coord-bancaire {
+  display: none;
+}
+
+/* Style pour les formulaires dans les sections "Carte" et "Panier" */
+#carte form,
+#panierC form {
+  font-weight: bold;
+  margin: 0 auto;
+  align-content: center;
+  width: 700px;
+  font-size: 110%;
+}
+
+/* Style pour la section "Main" */
+main {
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 800px;
+  /* height: 100vh; */
+}
+
+/* Style pour les éléments de la grille */
+.grid-item {
+  border-radius: 10px;
+  background-size: cover;
+  height: 20vw;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+
+/* Style pour l'élément avec l'ID "checkbox" */
+#checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+/* Style pour les éléments avec les ID "depart" et "retour" */
+#depart,
+#retour {
+  width: 150px;
+  height: 30px;
+}
+
+/* Style pour la section "Réservation" */
+#reservation {
+  margin: 0 auto;
+  width: 500px;
+  height: 100%;
+}
+
+/* Style pour le champ "fieldset" */
+fieldset {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/* Style pour l'élément avec l'ID "global" */
+#global {
+  margin: 0 auto;
+  position: absolute;
+  width: 100vw;
+}
+
+/* Style pour l'élément avec l'ID "mail" */
+#mail {
+  height: 100px;
+  width: 1000px;
+}
+
+/* Style au focus pour l'icône dans un bouton */
+button:focus svg {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Style pour la grille dans le champ "fieldset" */
+.grid-fieldset {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+/* Style pour les listes non ordonnées */
+ul {
+  list-style-type: none;
+}
+
+/* Style pour l'élément avec l'ID "user" */
+#user {
+  position: absolute;
+  left: 96%;
+  top: 10px;
+  font-size: 17px;
+}
+
+/* Style pour le bouton de déconnexion */
+#logOut {
+  background-color: red;
+  border-color: red;
+  color: white;
+  transition: all 0.5s;
+}
+
+/* Style au survol pour le bouton de déconnexion */
+#logOut:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/reservation.css" />
+    <title>Réservation</title>
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/reservation.js"></script>
+  </head>
+
+  <body
+    id="page_r"
+    onload="updateDest(),calculer(),minDateform1(),init_page(),hide_options()"
+  >
+    <div id="global">
+      <img src="#" id="background_image" alt=""/>
+      <div id="carte">
+        <main>
+          <h1 id="entete"></h1>
+          <form action="panier.html" id="formulaire" onchange="calculer()">
+            <fieldset>
+              <div id="dest">Destination :</div>
+              <br />
+              <input type="hidden" id="dest_name" name="dest" />
+              <input type="hidden" id="price" value name="price" />
+              <fieldset>
+                Date de départ* : <br />
+                <input
+                  id="depart"
+                  type="date"
+                  name="date_départ"
+                  required
+                  onchange="minDateform2()"
+                />
+                <br /><br />
+                Date de retour* : <br />
+                <input
+                  id="retour"
+                  type="date"
+                  name="date_retour"
+                  required
+                />
+                <br />
+              </fieldset>
+              <br />
+              <fieldset>
+                Nombre d'adultes*:
+                <select id="Nadultes" name="adults" required>
+                  <script>
+                    for (var num = 1; num <= 10; num++) {
+                      document.writeln(
+                        "<option value =",
+                        num,
+                        ">",
+                        num,
+                        "</option>"
+                      );
+                    }
+                  </script>
+                </select>
+                <br />
+                <br />
+                <span id="child">
+                  Nombre d'enfants de moins de 12 ans*:
+                  <select id="Nenfants" name="enfants" required>
+                    <script>
+                      for (var num = 0; num <= 9; num++) {
+                        document.writeln(
+                          "<option value =",
+                          num,
+                          ">",
+                          num,
+                          "</option>"
+                        );
+                      }
+                    </script>
+                  </select>
+                  <br />
+                </span>
+              </fieldset>
+              <br />
+              Voulez-vous un petit déjeuner? (15€ par personne):
+              <input
+                id="checkbox"
+                type="checkbox"
+                name="breakfast"
+              /><br /><br />
+
+              <div id="total">Le montant de votre réservation est : 0€</div>
+              <br />
+              <br />
+              <span>
+                <input
+                  id="bouton"
+                  type="button"
+                  value="Réinitialiser"
+                  onclick="reset(), calculer()"
+                />
+              </span>
+              <input id="bouton" type="submit" value="Réserver ce voyage" />
+            </fieldset>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

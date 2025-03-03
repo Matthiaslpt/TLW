@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Confirmation du Panier</title>
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/confirmation.js"></script>
+  </head>
+  <body id="panierC" onload="updateCart(),init_page(),country(),show_infos()">
+    <h1 id="entete"></h1>
+
+    <h1>Panier</h1>
+    <br />
+    <h2>Récapitulatif de la commande:</h2>
+    <br />
+    <h3>Moyen de paiement</h3>
+    <br />
+
+    <form action="order.html" id="contenu">
+      <input id="cart" type="hidden" />
+      <input type="hidden" id="selections" name="id" />
+      <fieldset>
+        <select
+          name="Moyen"
+          id="MoyPaiement"
+          required
+          onchange="update_payment()"
+        >
+          <option value disabled selected hidden>
+            --Choisir un moyen de paiement--
+          </option>
+          <option value="AP">ApplePay</option>
+          <option value>Plusieurs fois avec frais</option>
+          <option value="CB">Carte bancaire</option></select
+        ><br /><br />
+
+        <fieldset id="coord-bancaire">
+          Numéro de carte <br />
+          <input type="text" placeholder="4978 7423 2832 0205" /><br /><br />
+          Date d'expiration <br />
+          <select name="NMois" id="mois">
+            <script>
+              for (var num = 1; num <= 12; num++) {
+                document.writeln("<option value =", num, ">", num, "</option>");
+              }
+            </script>
+          </select>
+          <select name="Nannee" id="annee">
+            <script>
+              for (var num = 2023; num <= 2033; num++) {
+                document.writeln("<option value =", num, ">", num, "</option>");
+              }
+            </script>
+          </select>
+          <br /><br />
+          Nom apparaissant sur la carte <br />
+          <input
+            type="text"
+            name="nom"
+            placeholder="Jean Durant"
+            id="bancaire"
+          /><br /><br />
+          CVV <br />
+          <input type="text" name="cvv" placeholder="000" />
+        </fieldset>
+      </fieldset>
+      <br />
+      <h3>Adresse de livraison</h3>
+      <br />
+      <fieldset>
+        Prénom:
+        <input type="text" name="prenom" placeholder="Jean" required />
+        Nom:
+        <input
+          type="text"
+          name="nom"
+          placeholder="Durant"
+          required
+        /><br /><br />
+        Portable: <br />
+        <input
+          type="tel"
+          name="telephone"
+          pattern="[0-9]{10}"
+          placeholder="0782047287"
+          required
+        /><br /><br />
+        Pays: <br />
+        <select name="Tpays" id="pays" required></select>
+        <br /><br />
+        Adresse: <br />
+        <input type="text" id="adresse" placeholder="Adresse" required />
+      </fieldset>
+      <br />
+
+      <p id="prix">Prix a payer :</p>
+
+      <input
+        type="submit"
+        value="Confirmer votre panier"
+        id="bouton"
+      /><br /><br /><br />
+    </form>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* Style pour la grille du panier */
+#grid-panier {
+  text-align: right;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 67% 33%;
+  grid-template-rows: 9% 91%;
+  position: relative;
+}
+
+/* Style pour les éléments de liste dans la grille du panier */
+.grid-panier ul {
+  color: #393c41;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.grid-panier li {
+  justify-items: left;
+  height: 5vh;
+}
+
+/* Styles additionnels pour les éléments de liste dans la grille du panier */
+.grid-panier ul {
+  text-align: left;
+  float: left;
+}
+
+/* Style pour la grille du panier (déclaration redondante) */
+.grid-panier {
+  text-align: right;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+/* Style pour l'icône de suppression */
+#delete {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid rgb(231, 50, 50);
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+  overflow: hidden;
+  transition: 0.3s;
+  top: -3px;
+  left: -8px;
+  z-index: 5;
+}
+
+/* Style pour l'icône de suppression au survol */
+button:hover #delete {
+  background-color: rgb(245, 207, 207);
+  transform: scale(1.2);
+  box-shadow: 0 0 4px #111;
+  transition: 0.3s;
+}
+
+svg {
+  color: rgb(231, 50, 50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+button:focus #delete {
+  width: 150px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+/* Style pour le texte de confirmation de suppression au focus */
+button:focus span {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* Style pour le texte de confirmation de suppression */
+#suppr {
+  width: 150px;
+  position: absolute;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  color: rgb(231, 50, 50);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Style pour le bouton "Valider" */
+#Valider {
+  position: relative;
+  right: -110px;
+}
+
+/* Style pour les images dans la grille du panier */
+.grid-panier img {
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Style pour l'élément avec l'ID "empty" */
+#empty {
+  position: relative;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+
+/* Style pour l'élément avec l'ID "empty" au survol */
+#empty:hover {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
+/* Style pour le champ "fieldset" */
+fieldset {
+  width: 100%;
+}
+
+/* Style pour l'élément avec l'ID "delAll" */
+#delAll {
+  display: none;
+}
+
+/* Style pour l'icône de suppression dans l'élément avec l'ID "delAll" */
+#delAll #delete {
+  position: sticky;
+}
+
+/* Style pour l'élément avec l'ID "hide" */
+#hide {
+  visibility: visible;
+}
+
+/* Style pour l'élément "h2" */
+h2 {
+  position: relative;
+  top: -45px;
+}
+
+/* Style pour l'élément "br" */
+br {
+  visibility: visible;
+}
+
+/* Style pour l'élément "strong" */
+strong {
+  color: red;
+}

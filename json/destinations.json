@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Annecy",
+    "price": 10,
+    "id": 0,
+    "filtre": ["child", "pet"]
+  },
+  {
+    "name": "Athènes",
+    "price": 80,
+    "id": 1,
+    "filtre": ["child", "pet"]
+  },
+  {
+    "name": "Londres",
+    "price": 70,
+    "id": 2,
+    "filtre": ["child", "pet"]
+  },
+  {
+    "name": "Hô-Chi-Minh",
+    "price": 400,
+    "id": 3,
+    "filtre": ["child"]
+  },
+  {
+    "name": "Papeete",
+    "price": 300,
+    "id": 4,
+    "filtre": []
+  },
+  {
+    "name": "Prague",
+    "price": 50,
+    "id": 5,
+    "filtre": ["child"]
+  },
+  {
+    "name": "Mürren",
+    "price": 70,
+    "id": 6,
+    "filtre": ["pet"]
+  },
+  {
+    "name": "Venise",
+    "price": 100,
+    "id": 7,
+    "filtre": ["child"]
+  },
+  {
+    "name": "Vienne",
+    "price": 60,
+    "id": 8,
+    "filtre": ["child", "pet"]
+  }
+]

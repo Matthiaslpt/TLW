@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos & contact</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="text/javascript" src="../js/script.js"></script>
+  </head>
+
+  <body onload="init_page()">
+    <h1 id="entete"></h1>
+
+    <div id="apropos">
+      <h2>A propos & contact</h2>
+      <br /><br />
+      <h3>Adresse</h3>
+      <p>Adresse postale: 3 rue Victor Grignard 69100 VILLEURBANNE</p>
+      <br />
+      <h3>Contact</h3>
+      <p>
+        Au moindre problème n'hésitez pas à nous joindre par téléphone :
+        <a href="tel:0625356294">Contactez nous!</a>
+      </p>
+      ou par mail: <br /><br />
+      <form
+        action="mailto:adresse.mail@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <textarea name="mail" id="mail">
+Bonjour, je souhaiterais obtenir des renseignements sur</textarea
+        >
+        <br /><input type="submit" value="SOUMETTRE" id="bouton" />
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>

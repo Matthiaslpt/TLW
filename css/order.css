@@ -1,0 +1,12 @@
+/* Style pour les listes non ordonnées (ul) */
+ul {
+  font-size: 80%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style pour l'élément avec l'ID "recap" */
+#recap {
+  margin: 0 auto;
+  width: 500px;
+  height: 100%;
+}

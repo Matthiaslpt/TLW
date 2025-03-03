@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/credentials.js"></script>
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+  </head>
+  <body onload="getHours(),affichageVoyages(),init_page()">
+    <h1 id="entete"></h1>
+    <nav class="grid-container">
+      <ul>
+        <li class="deroulant">
+          <a href="#"
+            ><img src="../images/filtres.png" alt="Filtre" id="filtreIMG"
+          /></a>
+          <ul class="sous">
+            <li>
+              <br />
+              <div id="filtre" onchange="filtrer()">
+                <label for="price">Filtrer le prix :</label>
+                <input
+                  type="range"
+                  min="0"
+                  max="500"
+                  value="0"
+                  id="price"
+                  onchange="slider()"
+                />
+                <span id="price-value">Aucun</span>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-wrapper-35">
+                <input
+                  class="switch"
+                  type="checkbox"
+                  id="f-enfants"
+                  name="switch"
+                  value="private"
+                  onchange="filtrer()"
+                />
+                <label for="f-enfants">
+                  <span class="switch-x-text">Voyages avec enfants </span>
+                  <span class="switch-x-toggletext">
+                    <span class="switch-x-unchecked"
+                      ><span class="switch-x-hiddenlabel">Unchecked: </span
+                      >Non</span
+                    >
+                    <span class="switch-x-checked"
+                      ><span class="switch-x-hiddenlabel">Checked: </span
+                      >Oui</span
+                    >
+                  </span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <br />
+              <div class="checkbox-wrapper-35">
+                <input
+                  class="switch"
+                  type="checkbox"
+                  id="f-animaux"
+                  name="switch"
+                  value="private"
+                  onchange="filtrer()"
+                />
+                <label for="f-animaux">
+                  <span class="switch-x-text">Voyages avec animaux </span>
+                  <span class="switch-x-toggletext">
+                    <span class="switch-x-unchecked"
+                      ><span class="switch-x-hiddenlabel">Unchecked: </span
+                      >Non</span
+                    >
+                    <span class="switch-x-checked"
+                      ><span class="switch-x-hiddenlabel">Checked: </span
+                      >Oui</span
+                    >
+                  </span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <span id="logo_bis">
+        <img src="../images/logo_bis.png" alt="" />
+      </span>
+      <span id="panier">
+        <a href="../html/panier.html"
+          ><img src="../images/panier.png" alt="Panier"
+        /></a>
+      </span>
+    </nav>
+    <br /><br />
+    <span id="grid_dest">
+      <div id="contenu" class="grid-container">
+        <template id="Destination">
+          <a>
+            <div class="grid-item">
+              <h1>{{destination}}</h1>
+              <h2></h2>
+            </div>
+          </a>
+        </template>
+      </div>
+    </span>
+    <br /><br /><br />
+
+    <footer></footer>
+  </body>
+</html>
