@@ -7,6 +7,6 @@ Lors de la réalisation de ce site, nous avons utilisé le footer vu en cours su
 Pour que le site soit opérationnelle, il suffit de mettre votre clé d'API de l'API 'OpenWeatherMap' dans le fichier credentials.js entre les "".
 La partie connexion utilise un fichier json (login.json) avec des exemples d' identifiants/mots de passes.
 
-La répartition du travail effectuée est la suivante: 60% Matthias LAPOINTE et 40% Jonathanh TA.
+La répartition du travail effectuée est la suivante: 80% Matthias LAPOINTE et 20% Jonathanh TA.
 
 
